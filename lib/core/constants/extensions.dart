@@ -13,6 +13,14 @@ extension NumExtension on num {
     return EdgeInsets.all(toDouble());
   }
 
+  EdgeInsets get edgeInsetsVertical {
+    return EdgeInsets.symmetric(vertical: toDouble());
+  }
+
+  EdgeInsets get edgeInsetsHorizontal {
+    return EdgeInsets.symmetric(horizontal: toDouble());
+  }
+
   /// Border Radius
   BorderRadius get borderRadiusAll {
     return BorderRadius.circular(toDouble());

@@ -8,6 +8,11 @@ final class StatusInitial extends StatusState {
 }
 
 final class StatusSuccess extends StatusState {
+  List<StoryModel> stories;
+  List<ChannelModel> channels;
+
+  StatusSuccess(this.stories, this.channels);
+
   @override
   String toString() => "Success";
 }

@@ -22,7 +22,7 @@ class ChatScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage(isDark ? AppAssets.chatBackgroundDark : AppAssets.chatBackgroundLight), opacity: 0.2, fit: BoxFit.fill),
+            image: DecorationImage(image: AssetImage(isDark ? AppAssets.chatBackgroundDark : AppAssets.chatBackgroundLight), opacity: 0.05, fit: BoxFit.fill),
           ),
           child: BlocProvider.value(
             value: cubit,

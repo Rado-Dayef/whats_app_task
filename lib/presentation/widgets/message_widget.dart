@@ -23,10 +23,10 @@ class MessageWidget extends StatelessWidget {
               decoration: BoxDecoration(
                 color: message.sender == "You" ? (isDark ? AppColors.selectedItemDark : AppColors.selectedItemLight) : (isDark ? AppColors.searchBarAndBordersDark : AppColors.backgroundLight),
                 borderRadius: BorderRadius.only(
-                  topLeft: message.sender == "You" ? Radius.circular(10) : Radius.circular(0),
-                  bottomLeft: Radius.circular(10),
-                  bottomRight: Radius.circular(10),
-                  topRight: message.sender == "You" ? Radius.circular(0) : Radius.circular(10),
+                  topLeft: message.sender == "You" ? Radius.circular(15) : Radius.circular(0),
+                  bottomLeft: Radius.circular(15),
+                  bottomRight: Radius.circular(15),
+                  topRight: message.sender == "You" ? Radius.circular(0) : Radius.circular(15),
                 ),
               ),
               child: Column(
@@ -57,7 +57,7 @@ class MessageWidget extends StatelessWidget {
               ),
             ),
           ),
-          message.sender == "You" ? 25.gap : 0.gap,
+          25.gap,
         ],
       ),
     );

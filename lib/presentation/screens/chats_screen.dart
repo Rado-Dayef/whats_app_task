@@ -113,6 +113,9 @@ class ChatsScreen extends StatelessWidget {
                 ),
               ),
               15.gap,
+              _buildLockedChatsAndArchivedItem(Icons.lock_outlined, title: AppStrings.lockedChats, isDark: isDark),
+              _buildLockedChatsAndArchivedItem(Icons.archive_outlined, title: AppStrings.archived, isDark: isDark),
+              10.gap,
               BlocBuilder<ChatsCubit, ChatsState>(
                 builder: (context, state) {
                   if (state is ChatsSuccess) {
@@ -146,16 +149,48 @@ class ChatsScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            padding: 5.edgeInsetsAll,
-            decoration: BoxDecoration(borderRadius: 10.borderRadiusAll, color: isDark ? AppColors.searchBarAndBordersDark : AppColors.searchBarAndBordersLight),
-            child: Image.asset(AppAssets.metaAi, height: 25, width: 25),
+          InkWell(
+            onTap: () {
+              AppStrings.thisFeatureIsNotAvailable.showToast;
+            },
+            child: Container(
+              padding: 5.edgeInsetsAll,
+              decoration: BoxDecoration(borderRadius: 10.borderRadiusAll, color: isDark ? AppColors.searchBarAndBordersDark : AppColors.searchBarAndBordersLight),
+              child: Image.asset(AppAssets.metaAi, height: 25, width: 25),
+            ),
           ),
           15.gap,
-          Container(
-            padding: 12.edgeInsetsAll,
-            decoration: BoxDecoration(borderRadius: 10.borderRadiusAll, color: isDark ? AppColors.floatingActionButtonDark : AppColors.floatingActionButtonLight),
-            child: Icon(Icons.mark_unread_chat_alt, color: isDark ? AppColors.backgroundDark : AppColors.backgroundLight),
+          InkWell(
+            onTap: () {
+              AppStrings.thisFeatureIsNotAvailable.showToast;
+            },
+            child: Container(
+              padding: 12.edgeInsetsAll,
+              decoration: BoxDecoration(borderRadius: 10.borderRadiusAll, color: isDark ? AppColors.floatingActionButtonDark : AppColors.floatingActionButtonLight),
+              child: Icon(Icons.mark_unread_chat_alt, color: isDark ? AppColors.backgroundDark : AppColors.backgroundLight),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLockedChatsAndArchivedItem(IconData icon, {required String title, required bool isDark}) {
+    return InkWell(
+      onTap: () {
+        AppStrings.thisFeatureIsNotAvailable.showToast;
+      },
+      child: Row(
+        children: [
+          SizedBox(
+            width: 50,
+            height: 50,
+            child: Center(child: Icon(icon, color: isDark ? AppColors.subTextAndIconsDark : AppColors.subTextAndIconsLight)),
+          ),
+          10.gap,
+          Text(
+            title,
+            style: TextStyle(color: isDark ? AppColors.subTextAndIconsDark : AppColors.subTextAndIconsLight, fontSize: AppFonts.h4, fontWeight: AppFonts.bold),
           ),
         ],
       ),

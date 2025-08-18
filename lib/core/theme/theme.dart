@@ -9,6 +9,9 @@ class AppTheme {
     highlightColor: AppColors.transparent,
     scaffoldBackgroundColor: AppColors.backgroundLight,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.backgroundLight),
+    iconButtonTheme: IconButtonThemeData(
+      style: ButtonStyle(splashFactory: NoSplash.splashFactory, overlayColor: WidgetStateProperty.all(Colors.transparent)),
+    ),
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -17,5 +20,8 @@ class AppTheme {
     highlightColor: AppColors.transparent,
     scaffoldBackgroundColor: AppColors.backgroundDark,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.backgroundDark, brightness: Brightness.dark),
+    iconButtonTheme: IconButtonThemeData(
+      style: ButtonStyle(splashFactory: NoSplash.splashFactory, overlayColor: WidgetStateProperty.all(Colors.transparent)),
+    ),
   );
 }

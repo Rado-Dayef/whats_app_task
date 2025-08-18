@@ -50,6 +50,6 @@ extension NumExtension on num {
 
 extension StringsExtension on String {
   Future<bool?> get showToast {
-    return Fluttertoast.showToast(msg: this, textColor: AppColors.toastBackground, backgroundColor: AppColors.toastText);
+    return Fluttertoast.showToast(msg: this, textColor: AppColors.toastText, backgroundColor: AppColors.toastBackground);
   }
 }

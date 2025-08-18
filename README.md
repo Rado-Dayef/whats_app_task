@@ -1,16 +1,74 @@
-# whats_app_task
+# WhatsApp Clone
 
-A new Flutter project.
+A modern WhatsApp UI clone built with Flutter, implementing core features like chats, status updates, and channels with a clean, responsive design.
 
-## Getting Started
+<div align="center">
+  <img src="assets/logo.png" alt="WhatsApp Clone Logo" width="200"/>
+</div>
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Chat Interface**: Modern chat UI with message bubbles and timestamps
+- **Status Updates**: View and share status updates with friends
+- **Channels**: Browse and follow different channels
+- **Dark/Light Theme**: Full support for both light and dark modes
+- **Responsive Design**: Works on multiple screen sizes
+- **Animations**: Smooth transitions and interactive elements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Getting Started
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Prerequisites
+
+- Flutter SDK (latest stable version)
+- Dart SDK (included with Flutter)
+- Android Studio / Xcode (for emulator/simulator)
+- VS Code or Android Studio (recommended IDEs)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rado-Dayef/whats_app_task.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the app**
+   ```bash
+   flutter run
+   ```
+
+## 🛠️ Architecture
+
+The app follows a clean architecture pattern with:
+
+- **Presentation Layer**: UI components and screens
+- **Business Logic**: Cubits for state management
+- **Data Layer**: Models and repositories
+- **Core**: Constants, themes, and utilities
+
+## 📂 Project Structure
+
+```
+lib/
+├── core/
+│   ├── constants/    # App constants and strings
+│   ├── routes/       # App routing
+│   └── theme/        # App theming
+├── data/
+│   └── models/       # Data models
+├── logic/
+│   └── cubits/       # State management
+└── presentation/
+    ├── screens/      # App screens
+    └── widgets/      # Reusable widgets
+```
+
+## 📬 Contact
+
+Mourad Dayef - [LinkedIn](https://www.linkedin.com/in/mourad-dayef-807803253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) - [Email](mouraddayef9@gamail.com)
+
+Project Link: [WhatsApp-Clone](https://github.com/Rado-Dayef/whats_app_task)

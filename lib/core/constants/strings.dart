@@ -5,6 +5,7 @@ class AppStrings {
   static const String all = "All";
   static const String calls = "Calls";
   static const String chats = "Chats";
+  static const String reply = "Reply";
   static const String groups = "Groups";
   static const String unread = "Unread";
   static const String status = "Status";
@@ -19,6 +20,7 @@ class AppStrings {
   static const String addStatus = "Add status";
   static const String communities = "Communities";
   static const String lockedChats = "Locked chats";
+  static const String exploreMore = "Explore More";
   static const String noChatsFound = "No Chats Found";
   static const String askMetaAiOrSearch = "Ask Meta AI or Search";
   static const String thisFeatureIsNotAvailable = "This Feature Is Not Available";

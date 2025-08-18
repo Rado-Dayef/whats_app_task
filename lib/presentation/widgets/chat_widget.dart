@@ -28,7 +28,10 @@ class ChatWidget extends StatelessWidget {
             backgroundColor: isDark ? AppColors.searchBarAndBordersDark : AppColors.searchBarAndBordersLight,
             child: chat.image.isEmpty
                 ? Icon(Icons.person_outline_rounded, color: isDark ? AppColors.textAndBottomBarIconsDark : AppColors.textAndBottomBarIconsLight)
-                : ClipRRect(borderRadius: 50.borderRadiusAll, child: Image.asset(chat.image)),
+                : ClipRRect(
+                    borderRadius: 50.borderRadiusAll,
+                    child: Image.asset(chat.image, fit: BoxFit.cover, width: 50, height: 50),
+                  ),
           ),
           15.gap,
           Expanded(

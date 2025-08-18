@@ -9,6 +9,7 @@ class AppStrings {
   static const String unread = "Unread";
   static const String status = "Status";
   static const String follow = "Follow";
+  static const String message = "Message";
   static const String updates = "Updates";
   static const String explore = "Explore";
   static const String archived = "Archived";
@@ -18,5 +19,7 @@ class AppStrings {
   static const String addStatus = "Add status";
   static const String communities = "Communities";
   static const String lockedChats = "Locked chats";
+  static const String noChatsFound = "No Chats Found";
   static const String askMetaAiOrSearch = "Ask Meta AI or Search";
+  static const String thisFeatureIsNotAvailable = "This Feature Is Not Available";
 }

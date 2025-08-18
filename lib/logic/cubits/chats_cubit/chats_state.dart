@@ -8,6 +8,11 @@ final class ChatsInitial extends ChatsState {
 }
 
 final class ChatsSuccess extends ChatsState {
+  List<ChatModel> chats;
+  List<CategoryModel> categories;
+
+  ChatsSuccess(this.chats, this.categories);
+
   @override
   String toString() => "Success";
 }
